@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/pokemon.css" />
+    <link rel="shortcut icon" href="img/Pokemon-Pokeball-PNG-Photo.png" />
+    <title>Pokédex</title>
+  </head>
+  <body onload="showPokemon()">
+    <header>
+      <img
+        class="logo"
+        src="img/International_Pokémon_logo.svg.png"
+        onclick="location.href='index.html'"
+        alt="Pokémon Logo"
+      />
+      <h5 class="return-text">Haz clic en el logo para volver a la página principal</h5>
+    </header>
+
+    <main>
+      <section class="card">
+        <h1 id="name"></h1>
+
+        <div class="image">
+          <img src="" alt="Frontal" id="front" />
+          <img src="" alt="Espalda" id="back" />
+          <img src="" alt="Frontal Shiny" id="frontShiny" />
+          <img src="" alt="Espalda Shiny" id="backShiny" />
+        </div>
+
+        <div class="data">
+          <div class="info">
+            <div class="info-item">
+              <h3>Altura</h3>
+              <p id="height"></p>
+            </div>
+            <div class="info-item">
+              <h3>Peso</h3>
+              <p id="weight"></p>
+            </div>
+            <div class="info-item">
+              <h3>Habilidades</h3>
+              <p id="abilities"></p>
+            </div>
+          </div>
+
+          <div class="movements">
+            <h2>Movimientos</h2>
+            <p id="movements"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/libs/axios.min.js"></script>
+    <script src="scripts/pokemon.js"></script>
+  </body>
+</html>

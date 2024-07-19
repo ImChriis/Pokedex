@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="shortcut icon" href="img/Pokemon-Pokeball-PNG-Photo.png" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <img class="logo" src="img/International_Pokémon_logo.svg.png" />
+    <input
+      type="number"
+      id="search"
+      placeholder="Ingresa el número de pokémon"
+    />
+    <div id="card"></div>
+    <button onclick="getPokemons()">Ver Más</button>
+
+    <script src="./scripts/libs/axios.min.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
